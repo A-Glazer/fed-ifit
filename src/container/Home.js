@@ -2,6 +2,7 @@ import React from 'react'
 import "../styles.css"
 import heroOverlay from '../images/heroOverlay.png'
 // import productNav from './productNav.js'
+import ifitCoach from '../images/ifitCoach.png'
 
 export default class Home extends React.Component {
 
@@ -18,7 +19,17 @@ export default class Home extends React.Component {
                 </div>
 
 
-                <p>Main Nav Here</p>
+                {/* Main Nav */}
+                <div className="mainNav">
+                    <ul>
+                        <img src={ifitCoach} />
+                        <li><a href="#blog">EXERCISE</a></li>
+                        <li><a href="#nourish">NUTRITION</a></li>
+                        <li><a href="#shop">ACTIVITY</a></li>
+                        <li><a href="#sleep">SLEEP</a></li>
+                        <button>SIGN UP</button>
+                    </ul>
+                </div>
 
                 {/* Hero Section */}
                 <div class="heroSection">
