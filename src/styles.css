@@ -191,6 +191,8 @@ li a {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
+    flex: 1 0 21%
+
 }
 
 .cards {
@@ -199,7 +201,8 @@ li a {
     box-shadow: 0 7px 12px rgba(46, 49, 52, 0.3);
     border-radius: 4px;
     background-color: #ffffff;
-    margin: 24px
+    margin: 24px;
+
 }
 
 .cardImg {
