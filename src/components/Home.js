@@ -343,28 +343,28 @@ export default class Home extends React.Component {
 
                     {/* New Footer */}
                     <div className="footerbkd2">
-                            <Container className="footerbkd2space">
-                                <Row className="footerHeader">
-                                    <Col smPull={1}>Company</Col> 
-                                    <Col smPull={1}>Account</Col>
-                                    <Col smPull={8}>Support</Col>
-                                </Row>
-                                <Row className="footerInfo">
-                                    <Col smPull={1}>About</Col> 
-                                    <Col smPull={1}>Log In</Col>
-                                    <Col smPull={1}>Help Center</Col>
-                                </Row>
-                                <Row className="footerInfo">
-                                    <Col smPull={1}>Contact Us</Col> 
-                                    <Col smPull={1}>Create Account</Col>
-                                    <Col smPull={1}>Accessibility</Col>
-                                </Row>
-                                <Row className="footerInfo">
-                                    <Col smPull={1}>Careers</Col> 
-                                    <Col smPull={1}></Col>
-                                    <Col smPull={1}></Col>
-                                </Row>
-                            </Container>
+                        <Container className="footerbkd2space">
+                            <Row className="footerHeader">
+                                <Col >Company</Col>
+                                <Col smPull={1}>Account</Col>
+                                <Col smPull={1}>Support</Col>
+                            </Row>
+                            <Row className="footerInfo">
+                                <Col smPull={1}>About</Col>
+                                <Col smPull={1}>Log In</Col>
+                                <Col smPull={1}>Help Center</Col>
+                            </Row>
+                            <Row className="footerInfo">
+                                <Col smPull={1}>Contact Us</Col>
+                                <Col smPull={1}>Create Account</Col>
+                                <Col smPull={1}>Accessibility</Col>
+                            </Row>
+                            <Row className="footerInfo">
+                                <Col smPull={1}>Careers</Col>
+                                <Col smPull={1}></Col>
+                                <Col smPull={1}></Col>
+                            </Row>
+                        </Container>
 
                     </div>
 
@@ -388,11 +388,30 @@ export default class Home extends React.Component {
                                     <option value="русский">русский</option>
                                 </select>
                             </td>
-                            <td style={{ width: "201px" }} className="centerLang">© iFit.com. All Rights Reserved.</td>
-                            <td style={{ width: "91px" }} className="centerLang">Privacy Policy</td>
-                            <td style={{ width: "86px" }} className="centerLang">Terms of Use</td>
+                            <td className="centerLang">© iFit.com. All Rights Reserved.</td>
+                            <td className="centerLang">Privacy Policy</td>
+                            <td className="centerLang">Terms of Use</td>
                         </tr>
                     </table>
+
+                    {/* footer 3 - bootstrap */}
+                    {/* <Container className="footerBottom">
+                        <Row>
+                            <Col className="languageBox" >
+                                <select name="language" value={this.state.language} onChange={this.handleChange}>
+                                    <option value="English">English</option>
+                                    <option value="español">español</option>
+                                    <option value="中文">中文</option>
+                                    <option value="русский">русский</option>
+                                </select>
+                            </Col>
+                            <Col className="centerLang" >© iFit.com. All Rights Reserved.</Col>
+                            <Col className="centerLang" >Privacy Policy</Col>
+                            <Col className="centerLang">Terms of Use</Col>
+                        </Row>
+                    </Container> */}
+
+
                 </div >
 
             </div >

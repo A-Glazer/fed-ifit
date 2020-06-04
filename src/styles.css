@@ -491,6 +491,19 @@ li a {
     left: 40px;
 }
 
+@media (max-width: 768px) {
+    .languageBox {
+      position: inherit;
+    }
+  }
+  
+  /* Float to the right on screens that are equal to or greater than 769px wide */
+  @media (min-width: 769px) {
+    .languageBox {
+      position: absolute;
+    }
+  }
+
 .languageBox select {
     background-color: #2e3134;
     color: #ffffff;
