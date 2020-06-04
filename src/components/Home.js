@@ -141,7 +141,6 @@ export default class Home extends React.Component {
                     </Carousel>
 
                     {/* cards */}
-                    {/* SWITCH TO FLEXBOX: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */}
                     <div className="cardSection">
 
                         {/* card 1 */}
