@@ -44,6 +44,23 @@ import pinterest from '../images/pinterest.png'
 
 export default class Home extends React.Component {
 
+    // language
+    state = {
+        language: "English"
+    }
+
+    handleChange = event => {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+
+    handleSubmit = event => {
+        event.preventDefault()
+        this.setState({
+            language: event.target.value
+        })
+    }
 
     render() {
         const responsiveSlider = {
@@ -307,7 +324,23 @@ export default class Home extends React.Component {
                         <img src={instagram} />
                     </div>
 
+                    <table className="footerBottom">
+                        <tr>
+                            <td className="languageBox">
+                                <select name="language" value={this.state.language} onChange={this.handleChange} style={{backgroundColor: "#2e3134"}}>
+                                    <option value="English">English</option>
+                                    <option value="español">español</option>
+                                    <option value="中文">中文</option>
+                                    <option value="русский">русский</option>
+                                </select>
+                            </td>
+                            <td style={{ width: "201px" }} className="centerLang">© iFit.com. All Rights Reserved.</td>
+                            <td style={{ width: "91px" }} className="centerLang">Privacy Policy</td>
+                            <td style={{ width: "86px" }} className="centerLang">Terms of Use</td>
+                        </tr>
+                    </table>
                 </div >
+
             </div >
         )
     }
