@@ -45,6 +45,8 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 // import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
 
 export default class Home extends React.Component {
 
@@ -99,15 +101,15 @@ export default class Home extends React.Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav navbar-static-top">
                         <div className="justify-content-center nocontainer">
-                        <Nav className="mr-auto mainNavul">
-                            <a href="#home" className="mainNavli">EXERCISE</a>
-                            <a href="#link" className="mainNavli">NUTRITION</a>
-                            <a href="#home" className="mainNavli">ACTIVITY</a>
-                            <a href="#link" className="mainNavli">SLEEP</a>
-                        </Nav>
+                            <Nav className="mr-auto mainNavul">
+                                <a href="#home" className="mainNavli">EXERCISE</a>
+                                <a href="#link" className="mainNavli">NUTRITION</a>
+                                <a href="#home" className="mainNavli">ACTIVITY</a>
+                                <a href="#link" className="mainNavli">SLEEP</a>
+                            </Nav>
                         </div>
                     </Navbar.Collapse>
-                        <button className="mainNavButton">SIGN UP</button>
+                    <button className="mainNavButton">SIGN UP</button>
                 </Navbar>
 
 
@@ -311,7 +313,7 @@ export default class Home extends React.Component {
                     </div>
 
                     {/* Footer Section */}
-                    <div className="footerbkd">
+                    {/* <div className="footerbkd">
                         <table className="footerTable">
                             <div>
                                 <tr>
@@ -337,7 +339,36 @@ export default class Home extends React.Component {
                             </div>
                         </table>
 
+                    </div> */}
+
+                    {/* New Footer */}
+                    <div className="footerbkd2">
+                            <Container className="footerbkd2space">
+                                <Row className="footerHeader">
+                                    <Col smPull={1}>Company</Col> 
+                                    <Col smPull={1}>Account</Col>
+                                    <Col smPull={8}>Support</Col>
+                                </Row>
+                                <Row className="footerInfo">
+                                    <Col smPull={1}>About</Col> 
+                                    <Col smPull={1}>Log In</Col>
+                                    <Col smPull={1}>Help Center</Col>
+                                </Row>
+                                <Row className="footerInfo">
+                                    <Col smPull={1}>Contact Us</Col> 
+                                    <Col smPull={1}>Create Account</Col>
+                                    <Col smPull={1}>Accessibility</Col>
+                                </Row>
+                                <Row className="footerInfo">
+                                    <Col smPull={1}>Careers</Col> 
+                                    <Col smPull={1}></Col>
+                                    <Col smPull={1}></Col>
+                                </Row>
+                            </Container>
+
                     </div>
+
+                    {/* footer 2 */}
                     <div className="footerIcons">
                         <img src={youtube} />
                         <img src={pinterest} />
@@ -346,6 +377,7 @@ export default class Home extends React.Component {
                         <img src={instagram} />
                     </div>
 
+                    {/* footer 3 */}
                     <table className="footerBottom">
                         <tr>
                             <td className="languageBox">

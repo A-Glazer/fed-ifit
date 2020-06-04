@@ -294,7 +294,7 @@ li a {
 
 .cardOverlay {
     width: 112px;
-    height: 164px;
+    height: 150px;
     background-color: rgba(0, 12, 40, 0.54);
     position: absolute;
     right: 0px;
@@ -382,12 +382,43 @@ li a {
     margin-top: 40px;
 }
 
+.footerbkd2 {
+    height: 208px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    background-color: #2e3134;
+    margin-top: 40px;
+    color: #ffffff;
+    
+}
+
+.footerbkd2space {
+    padding-top: 48px;
+}
+
+.footerHeader {
+    height: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    /* line-height: 16px; */
+    /* padding-bottom: 8px;; */
+}
+
 .footerTable {
     color: #ffffff;
     text-align: left;
     margin: 0 auto;
 }
 
+.footerInfo {
+    opacity: 0.8;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    padding: 8px 0px;
+}
 
 
 .footerTable th {
