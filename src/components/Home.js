@@ -13,13 +13,6 @@ import gearjunkielogo from '../images/gearjunkielogo.svg'
 import wiredlogo from '../images/wiredlogo.svg'
 import mashablelogo from '../images/mashablelogo.svg'
 
-// import Card from 'react-bootstrap/Card'
-// import Button from 'react-bootstrap/Button'
-// import CardDeck from 'react-bootstrap/CardDeck'
-// import Container from 'react-bootstrap/Container'
-// import Row from 'react-bootstrap/Row'
-// import Col from 'react-bootstrap/Col'
-
 import card1img from '../images/card1img.jpg'
 import card2img from '../images/card2img.jpg'
 import card3img from '../images/card3img.jpg'
@@ -29,6 +22,14 @@ import card6img from '../images/card6img.jpg'
 import time from '../images/time.png'
 import miles from '../images/miles.png'
 import card1sm from '../images/card1sm.png'
+import card2sm from '../images/card2sm.png'
+import card3sm from '../images/card3sm.png'
+import card4sm from '../images/card4sm.png'
+import card5sm from '../images/card5sm.png'
+import card6sm from '../images/card6sm.png'
+import card7sm from '../images/card7sm.png'
+import card8sm from '../images/card8sm.png'
+import music from '../images/music.png'
 
 import treadmill from '../images/treadmill.png'
 import elliptical from '../images/elliptical.png'
@@ -117,128 +118,47 @@ export default class Home extends React.Component {
                         </div>
                     </Carousel>
 
-                    {/* cards */} 
+                    {/* cards */}
                     {/* SWITCH TO FLEXBOX: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */}
                     <div className="cardSection">
-                        <div className="row">
-                            <div class="column">
-                                <div className="cards hvr-pop">
-                                    <img src={card1img} className="cardImg" />
-                                    <div class="cardContainer">
-                                        <h4><img src={card1sm} className="imgSm" />Lake Inniscarra, Ireland—Pyramid  </h4>
 
-                                        <p className="iconRow">
-                                            <img src={time} className="cardIcon" />30:53
+                        {/* card 1 */}
+                        <div className="cards hvr-pop">
+                            <img src={card1img} className="cardImg" />
+                            <div class="cardContainer">
+                                <img src={card1sm} className="imgSm" />
+                                <div className="cardHeader">Lake Inniscarra, Ireland—Pyramid  </div>
+                                <div className="iconRow">
+                                    <img src={time} className="cardIcon" />30:53
                                     <img src={miles} className="cardIcon" />6,248
-                                </p>
-                                        <p className="cardDetails">VIEW DETAILS</p>
-                                    </div>
                                 </div>
+                                <div className="cardDetails">VIEW DETAILS</div>
                             </div>
+                        </div>
+                        
+                         {/* card 2 */}
+                         <div className="cards hvr-pop">
 
-                            <div class="column">
-                                <div className="cards hvr-pop">
-                                    <img src={card2img} className="cardImg" />
-                                    <div class="cardContainer">
-                                        <h4>Performance Series</h4>
-                                        <p className="iconRow">
-                                            <img src={time} className="cardIcon" />30:53
-                                    <img src={miles} className="cardIcon" />6,248
-                                </p>
-                                        <p className="cardDetails">VIEW DETAILS</p>
-                                    </div>
-                                </div>
+                            <div className="cardOverlay">
+                                <div className="bigNum">9</div> 
+                                <div className="workouts">Workouts</div>
+                                <img src={music}/>
                             </div>
-
-                            <div class="column">
-                                <div className="cards hvr-pop">
-                                    <img src={card1img} className="cardImg" />
-                                    <div class="cardContainer">
-                                        <h4>Lake Inniscarra, Ireland—Pyramid</h4>
-                                        <p className="iconRow">
-                                            <img src={time} className="cardIcon" />30:53
-                                    <img src={miles} className="cardIcon" />6,248
-                                </p>
-                                        <p className="cardDetails">VIEW DETAILS</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="column">
-                                <div className="cards hvr-pop">
-                                    <img src={card1img} className="cardImg" />
-                                    <div class="cardContainer">
-                                        <h4>Lake Inniscarra, Ireland—Pyramid</h4>
-                                        <p className="iconRow">
-                                            <img src={time} className="cardIcon" />30:53
-                                    <img src={miles} className="cardIcon" />6,248
-                                </p>
-                                        <p className="cardDetails">VIEW DETAILS</p>
-                                    </div>
-                                </div>
+                            <img src={card2img} className="cardImg" />
+                            <div class="cardContainer">
+                                <img src={card2sm} className="imgSm" />
+                                <div className="cardHeader">Performance Series</div>
                             </div>
                         </div>
 
-                        <div className="row">
-                            <div class="column">
-                                <div className="cards hvr-pop">
-                                    <img src={card1img} className="cardImg" />
-                                    <div class="cardContainer">
-                                        <h4>Lake Inniscarra, Ireland—Pyramid</h4>
-                                        <p className="iconRow">
-                                            <img src={time} className="cardIcon" />30:53
-                                    <img src={miles} className="cardIcon" />6,248
-                                </p>
-                                        <p className="cardDetails">VIEW DETAILS</p>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="column">
-                                <div className="cards hvr-pop">
-                                    <img src={card1img} className="cardImg" />
-                                    <div class="cardContainer">
-                                        <h4>Lake Inniscarra, Ireland—Pyramid</h4>
-                                        <p className="iconRow">
-                                            <img src={time} className="cardIcon" />30:53
-                                    <img src={miles} className="cardIcon" />6,248
-                                </p>
-                                        <p className="cardDetails">VIEW DETAILS</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="column">
-                                <div className="cards hvr-pop">
-                                    <img src={card1img} className="cardImg" />
-                                    <div class="cardContainer">
-                                        <h4>Lake Inniscarra, Ireland—Pyramid</h4>
-                                        <p className="iconRow">
-                                            <img src={time} className="cardIcon" />30:53
-                                    <img src={miles} className="cardIcon" />6,248
-                                </p>
-                                        <p className="cardDetails">VIEW DETAILS</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="column">
-                                <div className="cards hvr-pop">
-                                    <img src={card1img} className="cardImg" />
-                                    <div class="cardContainer">
-                                        <h4>Lake Inniscarra, Ireland—Pyramid</h4>
-                                        <p className="iconRow">
-                                            <img src={time} className="cardIcon" />30:53
-                                    <img src={miles} className="cardIcon" />6,248
-                                </p>
-                                        <p className="cardDetails">VIEW DETAILS</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
-                    {/* Equipment Section */}
+
+
+
+
+                    {/* Equipment Section  */}
                     <div className="equipText">
                         <div>Interested in our exciting iFit-enabled equipment?</div>
                     </div>
@@ -266,7 +186,7 @@ export default class Home extends React.Component {
 
 
 
-                </div>
+                </div >
             </div >
         )
     }
