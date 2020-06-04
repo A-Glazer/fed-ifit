@@ -5,6 +5,8 @@ import App from './App';
 import './index.css';
 import './fonts/ProximaNovaRg.ttf'
 import './fonts/ProximaNovaLt.ttf'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 

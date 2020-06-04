@@ -41,6 +41,10 @@ import twitter from '../images/twitter.png'
 import youtube from '../images/youtube.png'
 import pinterest from '../images/pinterest.png'
 
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+// import Button from 'react-bootstrap/Button'
+import Container from 'react-bootstrap/Container'
 
 export default class Home extends React.Component {
 
@@ -89,9 +93,26 @@ export default class Home extends React.Component {
                     </ul>
                 </div>
 
+                {/* Bootstrap Nav */}
+                <Navbar className="mainNav" expand="lg">
+                    <Navbar.Brand href="#home"><img src={ifitCoach} /></Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav navbar-static-top">
+                        <div className="justify-content-center nocontainer">
+                        <Nav className="mr-auto mainNavul">
+                            <a href="#home" className="mainNavli">EXERCISE</a>
+                            <a href="#link" className="mainNavli">NUTRITION</a>
+                            <a href="#home" className="mainNavli">ACTIVITY</a>
+                            <a href="#link" className="mainNavli">SLEEP</a>
+                        </Nav>
+                        </div>
+                    </Navbar.Collapse>
+                        <button className="mainNavButton">SIGN UP</button>
+                </Navbar>
+
 
                 {/* Main Nav */}
-                <div className="mainNav">
+                {/* <div className="mainNav">
                     <ul>
                         <img src={ifitCoach} />
                         <li><a href="#blog">EXERCISE</a></li>
@@ -100,7 +121,7 @@ export default class Home extends React.Component {
                         <li><a href="#sleep">SLEEP</a></li>
                         <button>SIGN UP</button>
                     </ul>
-                </div>
+                </div> */}
 
                 {/* Hero Section */}
                 <div class="heroSection">
@@ -292,26 +313,28 @@ export default class Home extends React.Component {
                     {/* Footer Section */}
                     <div className="footerbkd">
                         <table className="footerTable">
-                            <tr>
-                                <th>Company</th>
-                                <th>Account</th>
-                                <th>Support</th>
-                            </tr>
-                            <tr>
-                                <td>About</td>
-                                <td>Log In</td>
-                                <td>Help Center</td>
-                            </tr>
-                            <tr>
-                                <td>Contact Us</td>
-                                <td>Create Account</td>
-                                <td>Accessibility</td>
-                            </tr>
-                            <tr>
-                                <td>Careers</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
+                            <div>
+                                <tr>
+                                    <th>Company</th>
+                                    <th>Account</th>
+                                    <th>Support</th>
+                                </tr>
+                                <tr>
+                                    <td>About</td>
+                                    <td>Log In</td>
+                                    <td>Help Center</td>
+                                </tr>
+                                <tr>
+                                    <td>Contact Us</td>
+                                    <td>Create Account</td>
+                                    <td>Accessibility</td>
+                                </tr>
+                                <tr>
+                                    <td>Careers</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </div>
                         </table>
 
                     </div>
@@ -326,7 +349,7 @@ export default class Home extends React.Component {
                     <table className="footerBottom">
                         <tr>
                             <td className="languageBox">
-                                <select name="language" value={this.state.language} onChange={this.handleChange} style={{backgroundColor: "#2e3134"}}>
+                                <select name="language" value={this.state.language} onChange={this.handleChange}>
                                     <option value="English">English</option>
                                     <option value="español">español</option>
                                     <option value="中文">中文</option>
