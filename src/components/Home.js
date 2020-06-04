@@ -3,9 +3,6 @@ import "../styles.css"
 import heroOverlay from '../images/heroOverlay.png'
 import ifitCoach from '../images/ifitCoach.png'
 
-// import { Carousel } from 'react-responsive-carousel';
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
-
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -37,6 +34,12 @@ import treadmill from '../images/treadmill.png'
 import elliptical from '../images/elliptical.png'
 import strength from '../images/strength.png'
 import bike from '../images/bike.png'
+
+import facebook from '../images/facebook.png'
+import instagram from '../images/instagram.png'
+import twitter from '../images/twitter.png'
+import youtube from '../images/youtube.png'
+import pinterest from '../images/pinterest.png'
 
 
 export default class Home extends React.Component {
@@ -270,7 +273,39 @@ export default class Home extends React.Component {
                         </div>
                     </div>
 
+                    {/* Footer Section */}
+                    <div className="footerbkd">
+                        <table className="footerTable">
+                            <tr>
+                                <th>Company</th>
+                                <th>Account</th>
+                                <th>Support</th>
+                            </tr>
+                            <tr>
+                                <td>About</td>
+                                <td>Log In</td>
+                                <td>Help Center</td>
+                            </tr>
+                            <tr>
+                                <td>Contact Us</td>
+                                <td>Create Account</td>
+                                <td>Accessibility</td>
+                            </tr>
+                            <tr>
+                                <td>Careers</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
 
+                    </div>
+                    <div className="footerIcons">
+                        <img src={youtube} />
+                        <img src={pinterest} />
+                        <img src={facebook} />
+                        <img src={twitter} />
+                        <img src={instagram} />
+                    </div>
 
                 </div >
             </div >
