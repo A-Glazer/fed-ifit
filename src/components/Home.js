@@ -13,6 +13,29 @@ import gearjunkielogo from '../images/gearjunkielogo.svg'
 import wiredlogo from '../images/wiredlogo.svg'
 import mashablelogo from '../images/mashablelogo.svg'
 
+// import Card from 'react-bootstrap/Card'
+// import Button from 'react-bootstrap/Button'
+// import CardDeck from 'react-bootstrap/CardDeck'
+// import Container from 'react-bootstrap/Container'
+// import Row from 'react-bootstrap/Row'
+// import Col from 'react-bootstrap/Col'
+
+import card1img from '../images/card1img.jpg'
+import card2img from '../images/card2img.jpg'
+import card3img from '../images/card3img.jpg'
+import card4img from '../images/card4img.jpg'
+import card5img from '../images/card5img.jpg'
+import card6img from '../images/card6img.jpg'
+import time from '../images/time.png'
+import miles from '../images/miles.png'
+import card1sm from '../images/card1sm.png'
+
+import treadmill from '../images/treadmill.png'
+import elliptical from '../images/elliptical.png'
+import strength from '../images/strength.png'
+import bike from '../images/bike.png'
+
+
 export default class Home extends React.Component {
 
 
@@ -31,6 +54,7 @@ export default class Home extends React.Component {
                 items: 1
             }
         };
+
         return (
             <div>
                 {/* Product Nav */}
@@ -79,9 +103,171 @@ export default class Home extends React.Component {
                             <img src={mashablelogo} />
                             <p>“Breathes new life into a tired, old running routine.”</p>
                         </div>
+                        <div className="slideBox">
+                            <img src={gearjunkielogo} />
+                            <p>“You focus on putting in the work, and the technology handles the rest.”</p>
+                        </div>
+                        <div className="slideBox">
+                            <img src={wiredlogo} />
+                            <p>“Literally transports you from home to wherever you choose to run.”</p>
+                        </div>
+                        <div className="slideBox">
+                            <img src={mashablelogo} />
+                            <p>“Breathes new life into a tired, old running routine.”</p>
+                        </div>
                     </Carousel>
+
+                    {/* cards */} 
+                    {/* SWITCH TO FLEXBOX: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */}
+                    <div className="cardSection">
+                        <div className="row">
+                            <div class="column">
+                                <div className="cards hvr-pop">
+                                    <img src={card1img} className="cardImg" />
+                                    <div class="cardContainer">
+                                        <h4><img src={card1sm} className="imgSm" />Lake Inniscarra, Ireland—Pyramid  </h4>
+
+                                        <p className="iconRow">
+                                            <img src={time} className="cardIcon" />30:53
+                                    <img src={miles} className="cardIcon" />6,248
+                                </p>
+                                        <p className="cardDetails">VIEW DETAILS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div className="cards hvr-pop">
+                                    <img src={card2img} className="cardImg" />
+                                    <div class="cardContainer">
+                                        <h4>Performance Series</h4>
+                                        <p className="iconRow">
+                                            <img src={time} className="cardIcon" />30:53
+                                    <img src={miles} className="cardIcon" />6,248
+                                </p>
+                                        <p className="cardDetails">VIEW DETAILS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div className="cards hvr-pop">
+                                    <img src={card1img} className="cardImg" />
+                                    <div class="cardContainer">
+                                        <h4>Lake Inniscarra, Ireland—Pyramid</h4>
+                                        <p className="iconRow">
+                                            <img src={time} className="cardIcon" />30:53
+                                    <img src={miles} className="cardIcon" />6,248
+                                </p>
+                                        <p className="cardDetails">VIEW DETAILS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div className="cards hvr-pop">
+                                    <img src={card1img} className="cardImg" />
+                                    <div class="cardContainer">
+                                        <h4>Lake Inniscarra, Ireland—Pyramid</h4>
+                                        <p className="iconRow">
+                                            <img src={time} className="cardIcon" />30:53
+                                    <img src={miles} className="cardIcon" />6,248
+                                </p>
+                                        <p className="cardDetails">VIEW DETAILS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="row">
+                            <div class="column">
+                                <div className="cards hvr-pop">
+                                    <img src={card1img} className="cardImg" />
+                                    <div class="cardContainer">
+                                        <h4>Lake Inniscarra, Ireland—Pyramid</h4>
+                                        <p className="iconRow">
+                                            <img src={time} className="cardIcon" />30:53
+                                    <img src={miles} className="cardIcon" />6,248
+                                </p>
+                                        <p className="cardDetails">VIEW DETAILS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div className="cards hvr-pop">
+                                    <img src={card1img} className="cardImg" />
+                                    <div class="cardContainer">
+                                        <h4>Lake Inniscarra, Ireland—Pyramid</h4>
+                                        <p className="iconRow">
+                                            <img src={time} className="cardIcon" />30:53
+                                    <img src={miles} className="cardIcon" />6,248
+                                </p>
+                                        <p className="cardDetails">VIEW DETAILS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div className="cards hvr-pop">
+                                    <img src={card1img} className="cardImg" />
+                                    <div class="cardContainer">
+                                        <h4>Lake Inniscarra, Ireland—Pyramid</h4>
+                                        <p className="iconRow">
+                                            <img src={time} className="cardIcon" />30:53
+                                    <img src={miles} className="cardIcon" />6,248
+                                </p>
+                                        <p className="cardDetails">VIEW DETAILS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div className="cards hvr-pop">
+                                    <img src={card1img} className="cardImg" />
+                                    <div class="cardContainer">
+                                        <h4>Lake Inniscarra, Ireland—Pyramid</h4>
+                                        <p className="iconRow">
+                                            <img src={time} className="cardIcon" />30:53
+                                    <img src={miles} className="cardIcon" />6,248
+                                </p>
+                                        <p className="cardDetails">VIEW DETAILS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Equipment Section */}
+                    <div className="equipText">
+                        <div>Interested in our exciting iFit-enabled equipment?</div>
+                    </div>
+                    <div className="equipFlex">
+                        <div className="equipBox">
+                            <img src={treadmill} />
+                            <div className="equipSubTitle">Treadmills</div>
+                        </div>
+
+                        <div className="equipBox">
+                            <img src={bike} />
+                            <div className="equipSubTitle">Bikes</div>
+                        </div>
+
+                        <div className="equipBox">
+                            <img src={elliptical} />
+                            <div className="equipSubTitle">Ellipticals</div>
+                        </div>
+
+                        <div className="equipBox">
+                            <img src={strength} />
+                            <div className="equipSubTitle">Strength</div>
+                        </div>
+                    </div>
+
+
+
                 </div>
-            </div>
+            </div >
         )
     }
 }
