@@ -6,6 +6,8 @@ import ifitCoach from '../images/ifitCoach.png'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
+import Fade from 'react-reveal/Fade';
+
 import gearjunkielogo from '../images/gearjunkielogo.svg'
 import wiredlogo from '../images/wiredlogo.svg'
 import mashablelogo from '../images/mashablelogo.svg'
@@ -96,10 +98,10 @@ export default class Home extends React.Component {
                 </div>
 
                 {/* Bootstrap Nav */}
-                <Navbar className="mainNav" expand="lg">
+                <Navbar className="mainNav" expand="lg" >
                     <Navbar.Brand href="#home"><img src={ifitCoach} /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav navbar-static-top">
+                    <Navbar.Collapse id="basic-navbar-nav">
                         <div className="justify-content-center nocontainer">
                             <Nav className="mr-auto mainNavul">
                                 <a href="#home" className="mainNavli">EXERCISE</a>
@@ -112,26 +114,16 @@ export default class Home extends React.Component {
                     <button className="mainNavButton">SIGN UP</button>
                 </Navbar>
 
-
-                {/* Main Nav */}
-                {/* <div className="mainNav">
-                    <ul>
-                        <img src={ifitCoach} />
-                        <li><a href="#blog">EXERCISE</a></li>
-                        <li><a href="#nourish">NUTRITION</a></li>
-                        <li><a href="#shop">ACTIVITY</a></li>
-                        <li><a href="#sleep">SLEEP</a></li>
-                        <button>SIGN UP</button>
-                    </ul>
-                </div> */}
-
                 {/* Hero Section */}
                 <div class="heroSection">
                     <img className="heroPic" src={heroOverlay} alt="hero picture" />
-                    <div className="heroCenter">
-                        <div class="heroText">The best personal training, right in your own home</div>
-                        <button className="blueBtn">JOIN IFIT COACH</button>
-                    </div>
+                    <Fade top cascade>
+                        <div className="heroCenter">
+
+                            <div class="heroText">The best personal training, right in your own home</div>
+                            <button className="blueBtn">JOIN IFIT COACH</button>
+                        </div>
+                    </Fade>
                 </div>
 
                 {/* Media Slider */}
