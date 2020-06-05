@@ -1,6 +1,5 @@
 import React from 'react';
 import "./styles.css"
-import "./fonts.css";
 import Home from "./components/Home.js"
 import { Route, Switch } from 'react-router-dom'
 
