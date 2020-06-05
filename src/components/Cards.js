@@ -21,11 +21,9 @@ import card7sm from '../images/card7sm.png'
 import card8sm from '../images/card8sm.png'
 import music from '../images/music.png'
 
-
 const cards = () => {
 
     return (
-
         <div>
             <div className="cardSection">
 
@@ -37,8 +35,8 @@ const cards = () => {
                         <div className="cardHeader">Lake Inniscarra, Ireland—Pyramid  </div>
                         <div className="iconRow">
                             <img src={time} className="cardIcon" />30:53
-            <img src={miles} className="cardIcon" />6,248
-        </div>
+                            <img src={miles} className="cardIcon" />6,248
+                        </div>
                         <div className="cardDetails">VIEW DETAILS</div>
                     </div>
                 </div>
@@ -66,8 +64,8 @@ const cards = () => {
                         <div className="cardHeader">Slow Pulls and Fast Intervals</div>
                         <div className="iconRow">
                             <img src={time} className="cardIcon" />44:13
-            <img src={miles} className="cardIcon" />9,948 M
-        </div>
+                            <img src={miles} className="cardIcon" />9,948 M
+                        </div>
                     </div>
                 </div>
 

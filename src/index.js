@@ -7,10 +7,6 @@ import './fonts/ProximaNovaRg.ttf'
 import './fonts/ProximaNovaLt.ttf'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
-
-
 ReactDOM.render(
   <Router>
     <App />

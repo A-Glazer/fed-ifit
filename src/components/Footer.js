@@ -1,4 +1,5 @@
 import React from 'react'
+import "../styles.css"
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
@@ -7,6 +8,7 @@ import instagram from '../images/instagram.png'
 import twitter from '../images/twitter.png'
 import youtube from '../images/youtube.png'
 import pinterest from '../images/pinterest.png'
+
 
 class Footer extends React.Component {
     
@@ -24,12 +26,12 @@ class Footer extends React.Component {
             language: event.target.value
         })
     }
-    
+
     render() {
         return (
 
             <div>
-                {/* New Footer */}
+                {/* footer 1 */}
                 <div className="footerbkd2">
                     <Container className="footerbkd2space">
                         <Row className="footerHeader">
